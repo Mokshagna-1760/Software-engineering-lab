@@ -6,7 +6,7 @@ def calculate_weather(wind, pressure, humidity):
     y = wind * x**2 + pressure * x + humidity
     return x, y
 
-data = pd.read_csv('multi.csv')
+data = pd.read_csv('program-4.csv')
 
 for index, row in data.iterrows():
     wind = row['a']
